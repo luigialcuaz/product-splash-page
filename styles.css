@@ -36,6 +36,12 @@ p {
   margin-bottom: 0.5em;
 }
 
+.fine-print {
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: #858585;
+}
+
 /* =================
     Flex containers
    ================= */
@@ -53,7 +59,8 @@ main {
 
 .intro {
   color: #fff;
-  background-color: #9480e4;
+  background: #9480e4 url(./images/intro-bg.png);
+  background-size: cover;
   text-align: center;
   justify-content: center;
   min-height: 250px;
@@ -78,6 +85,45 @@ main {
     Form
    ================= */
 
+input {
+  margin-bottom: 0.75em;
+  padding: 0.5em;
+  border: solid 2px #d1d5db;
+}
+
+input:focus {
+  outline: none;
+  border-color: #8a71ec;
+  background-color: #e6e8ec;
+}
+
+input,
+.btn {
+  font-family: inherit;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.btn {
+  border: none;
+  padding: 0.8em 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn-primary {
+  color: white;
+  background-color: #8a71ec;
+  margin-top: 1em;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #b7a7f6;
+}
+
 /* =================
     Media queries 
    ================= */
@@ -88,7 +134,6 @@ main {
   }
 
   h1 {
-    /* font-size: 3.25rem; */
     font-size: 6vw;
   }
 
