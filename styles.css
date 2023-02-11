@@ -11,15 +11,29 @@ body {
 h1 {
   margin-top: 0;
   font-weight: 400;
+  font-size: 2.5rem;
+  text-shadow: 0 2px #816fca;
 }
 
-.beta-text {
+h2 {
+  font-size: 2.25rem;
+  margin-block: 0.16em;
+}
+
+.beta-text,
+.subheading {
   font-weight: 900;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1.125rem;
+  line-height: 1.35em;
 }
 
 .subheading {
   color: #575757;
-  font-weight: 900;
+  margin-bottom: 0.5em;
 }
 
 /* =================
@@ -68,4 +82,25 @@ main {
     Media queries 
    ================= */
 
-/* added flex and text positioning to the intro section */
+/* 
+  Challenge: 
+    - Set .beta-text and .subheading to appear in all-uppercase
+*/
+
+/* 
+  Challenge: Set the initial styles for text
+    - Set the paragraph to a relative font-size value equal to 18px
+    - Set the p line-height to 1.35 times its font-size value
+    - Give .subheading a bottom margin in em equal to half its font-size value
+*/
+
+/* 
+  Challenge: Set the initial styles for text
+    - Set the h2 to a relative font-size value equal to 36px
+    - Give the h2 a top and bottom margin value in em equal to 6px
+*/
+/* 
+  Challenge: Set the initial styles for text
+    - Set the h1 to a relative font-size value equal to 40px
+    - Apply a text shadow to the h1 using the color value #816fca
+*/
