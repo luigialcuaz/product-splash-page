@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: "Source Sans Pro", sans-serif;
@@ -21,7 +27,8 @@ h2 {
 }
 
 .beta-text,
-.subheading {
+.subheading,
+.top-text {
   font-weight: 900;
   text-transform: uppercase;
 }
@@ -34,6 +41,14 @@ p {
 .subheading {
   color: #575757;
   margin-bottom: 0.5em;
+}
+
+.top-text {
+  font-size: 0.875rem;
+  padding-top: 0.25em;
+  border-top: 5px solid;
+  margin: 0 auto;
+  order: -1;
 }
 
 .fine-print {
@@ -62,9 +77,9 @@ main {
   background: #9480e4 url(./images/intro-bg.png);
   background-size: cover;
   text-align: center;
-  justify-content: center;
+  justify-content: space-between;
   min-height: 250px;
-  padding-block: 1em;
+  padding-bottom: 1.5em;
 }
 
 /* ====================
@@ -79,6 +94,11 @@ main {
 .img-main {
   border-radius: 50%;
   width: 120px;
+}
+
+.main-content p,
+form {
+  max-width: 450px;
 }
 
 /* =================
@@ -148,7 +168,6 @@ input,
   .intro,
   .main-content {
     flex: 1;
-    padding-block: 0;
   }
 
   .intro {
